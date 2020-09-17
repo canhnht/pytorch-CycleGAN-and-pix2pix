@@ -21,3 +21,5 @@ CUDA_VISIBLE_DEVICES=1 python train.py --dataroot ./datasets/edvard-munch --name
 
 # 3
 CUDA_VISIBLE_DEVICES=3 python train.py --dataroot ./datasets/ludwig-kirchner --name ludwig-kirchner-20200914 --model cycle_gan --display_id 208 --display_port 8093 --batch_size 1 --gpu_ids 0 --preprocess scale_width_and_crop --load_size 2000 --crop_size 400
+
+CUDA_VISIBLE_DEVICES=2,3 python train.py --dataroot ./datasets/ludwig-kirchner --name ludwig-kirchner-20200914 --model cycle_gan --display_id 208 --display_port 8093 --batch_size 2 --gpu_ids 0,1 --preprocess scale_width_and_crop --load_size 2000 --crop_size 400 --continue_train --epoch_count 15
