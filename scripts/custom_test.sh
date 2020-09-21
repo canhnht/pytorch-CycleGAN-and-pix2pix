@@ -16,3 +16,7 @@
 
 # 4
 !CUDA_VISIBLE_DEVICES=0 python test.py --dataroot datasets/test-custom/sports-256 --name claude-monet-20200914 --model test --no_dropout --preprocess scale_width --load_size 2000 --eval --gpu_ids -1
+
+!CUDA_VISIBLE_DEVICES=0 python test.py --dataroot datasets/test-custom/sports-256 --name jackson-pollock-20200914 --model test --no_dropout --preprocess scale_width --load_size 2000 --eval --gpu_ids -1
+
+!CUDA_VISIBLE_DEVICES=0 python test.py --dataroot datasets/test-custom/sports-256 --name sesshu-toyo-20200914 --model test --no_dropout --preprocess scale_width --load_size 2000 --eval --gpu_ids -1
