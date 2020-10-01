@@ -8,6 +8,7 @@ CUDA_VISIBLE_DEVICES=1 python train.py --dataroot ./datasets/picasso --name pica
 CUDA_VISIBLE_DEVICES=2 python train.py --dataroot ./datasets/paul-gauguin --name paul-gauguin-20200914 --model cycle_gan --display_id 205 --display_port 8091 --batch_size 1 --gpu_ids 0 --preprocess scale_width_and_crop --load_size 2000 --crop_size 400
 CUDA_VISIBLE_DEVICES=2 python train.py --dataroot ./datasets/paul-gauguin --name paul-gauguin-20200914 --model cycle_gan --display_id 205 --display_port 8091 --batch_size 1 --gpu_ids 0 --preprocess scale_width_and_crop --load_size 2000 --crop_size 400 --continue_train --epoch_count
 
+CUDA_VISIBLE_DEVICES=0 python train.py --dataroot ./datasets/ludwig-kirchner --name ludwig-kirchner-20200921 --model cycle_gan --display_id 208 --display_port 8091 --batch_size 1 --gpu_ids 0 --preprocess scale_width_and_crop --load_size 2000 --crop_size 400 --continue_train --epoch_count 35
 CUDA_VISIBLE_DEVICES=0 python train.py --dataroot ./datasets/ludwig-kirchner --name ludwig-kirchner-20200921 --model cycle_gan --display_id 208 --display_port 8091 --batch_size 1 --gpu_ids 0 --preprocess scale_width_and_crop --load_size 2000 --crop_size 400
 
 # 4
